@@ -10,23 +10,60 @@ A modern React application for discovering and managing your favorite movies usi
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Persistent Storage**: Favorites are saved locally and persist between sessions
 - **Interactive UI**: Smooth hover effects and transitions
+- **Fast Loading**: Optimized performance with efficient API calls
 
 ## 🛠️ Technologies Used
 
-- **React 18** - Frontend framework
+- **React 19** - Frontend framework
 - **React Router** - Client-side routing
 - **Context API** - State management for favorites
 - **CSS3** - Custom styling with modern features
 - **TMDb API** - Movie data and poster images
 - **Local Storage** - Persistent favorites storage
+- **Vite** - Fast build tool and development server
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- npm or yarn package manager
-- TMDb API key (free registration at [themoviedb.org](https://www.themoviedb.org/))
+- **Node.js** (v18 or higher)
+- **npm** or **yarn** package manager
+- **TMDb API key** (free registration at [themoviedb.org](https://www.themoviedb.org/))
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Leon-87-7/movieListProject.git
+cd movieListProject
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Set up your API key securely
+
+- Get your free API key from TMDb API
+- Create a .env file in the project root:
+
+```bash
+VITE_TMDB_API_KEY=your-actual-api-key-here
+```
+
+- Important: Never commit your .env file to version control!
+
+4. Start the development server
+
+```bash
+npm run dev
+```
+
+5. Open your browser
+   Navigate to http://localhost:5173 to view the app
 
 ## 📁 Project Structure
 
@@ -123,6 +160,8 @@ npm run lint         # Run ESLint
 - Search results replace popular movies (could implement tabs)
 - No pagination for large result sets
 - Limited error messaging for network failures
+- API key visible in client-side code
+- No movie detail pages yet
 
 ## 🤝 Contributing
 
@@ -140,6 +179,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - [The Movie Database (TMDb)](https://www.themoviedb.org/) for providing the movie data API
 - React team for the amazing framework
+- Vite team for the fast build tool
 - All the open-source contributors who make projects like this possible
 
 ## 📧 Contact
